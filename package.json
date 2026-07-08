@@ -1,0 +1,27 @@
+{
+  "name": "@rignode/cli",
+  "version": "1.0.0",
+  "description": "Official CLI for RIGNODE — register GPU nodes, send heartbeats, and track USDC earnings on Solana",
+  "keywords": ["rignode", "solana", "gpu", "ai", "inference", "decentralized", "usdc", "cli"],
+  "homepage": "https://rignode.xyz",
+  "bugs": { "url": "https://github.com/rignode/rignode-cli/issues" },
+  "repository": { "type": "git", "url": "https://github.com/rignode/rignode-cli.git" },
+  "license": "MIT",
+  "author": "rignode <https://github.com/rignode>",
+  "contributors": [
+    { "name": "rignode", "url": "https://github.com/rignode" },
+    { "name": "claude", "url": "https://anthropic.com" }
+  ],
+  "bin": { "rignode-cli": "./dist/index.js" },
+  "main": "./dist/index.js",
+  "files": ["dist", "README.md", "LICENSE"],
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node src/index.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.0.0"
+  }
+}
